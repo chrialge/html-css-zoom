@@ -31,10 +31,15 @@ body{
 }
 /* end region header */
 /* region main */
+#site-main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
 .container{
     top: 10%;
     max-width: 1800px;
-    margin: auto;
+    margin: calc(1020px/10) auto;
     display: flex;
     background-color: #b42525;
     flex-wrap: wrap;
@@ -44,6 +49,19 @@ body{
 .square{
     width: calc((1800px/14)*2);
     height: 100px;
+}
+.badges{
+    position: absolute;
+    display: flex;
+    gap: 0.5rem;
+    right: 0;
+    top:0;
+
+}
+.icon{
+    background-color: var(--zoom-square-small);
+    width: 20px;
+    height: 20px;
 }
 
 /* end region main */

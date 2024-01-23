@@ -15,12 +15,20 @@
 body{
     font-family: 'Roboto', sans-serif;
     background-color: var(--zoom-primary);
+    color: white;
 }
 /* end region common */
+span{
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 700;
+}
 /* region utilies */
 /* end region utilies */
 /*  region header */
 .sidebar-zoom{
+    padding: 30px 40px;
     bottom: 0;
     left: 0;
     width: 100vw;
@@ -28,6 +36,33 @@ body{
     background-color: var(--zoom-secondary);
     display: flex;
     justify-content: space-between;
+}
+.widget-span{
+    vertical-align: middle;
+}
+div > img{
+    width: 30px;
+    display: block;
+    margin-left: 10px;
+}
+.left-header{
+    display: flex;
+}
+.menu-tendina{
+    vertical-align: middle;
+    margin:20px 15px;
+}
+.menu-tendina > img{
+    width: 20px;
+}
+.debug{
+    position: relative;
+}
+.debug-item{
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 /* end region header */
 /* region main */

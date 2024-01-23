@@ -56,13 +56,15 @@ div > img{
     width: 20px;
 }
 .debug{
-    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 .debug-item{
-    width: 100px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    height: 40px;
+}
+.debug > img{
+    margin: auto;
+    flex-grow: 1;
 }
 /* end region header */
 /* region main */

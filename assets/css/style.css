@@ -1,0 +1,26 @@
+/* region common */
+:root{
+    --zoom-primary: #000000;
+    --zoom-secondary: #222222;
+    --zoom-user-mic-container: #566674;
+    --zoom-square-small: #4a4a4a;
+    --zoom-button-important: #387b15;
+    --zoom-color-text-finish-call: #b42525;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/* end region common */
+/* region utilies */
+/* end region utilies */
+/*  region header */
+/* end region header */
+/* region main */
+/* end region main */
+/* region footer */
+/* end region footer */

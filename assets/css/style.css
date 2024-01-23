@@ -17,18 +17,29 @@ body{
     background-color: var(--zoom-primary);
     color: white;
 }
-/* end region common */
 span{
     font-size: 20px;
     text-align: center;
     line-height: 40px;
     font-weight: 700;
 }
+
+/* end region common */
+
 /* region utilies */
+.d-flex{
+    display: flex;
+}
+.width-50 > img{
+    width: 50px;
+}
+.padding-container{
+    padding: 15px 0 15px 50px;
+}
 /* end region utilies */
 /*  region header */
 .sidebar-zoom{
-    padding: 30px 40px;
+    vertical-align: middle;
     bottom: 0;
     left: 0;
     width: 100vw;
@@ -40,7 +51,7 @@ span{
 .widget-span{
     display: flex;
     flex-direction: column;
-    
+    margin-right: 30px;
 }
 .span{
     height: 40px;
@@ -51,30 +62,23 @@ span{
     margin: auto;
     flex-grow: 1;
 }
-.left-header{
-    display: flex;
-}
 .menu-tendina{
-    vertical-align: middle;
-    margin:20px 15px;
+    margin: 40px 30px 0 0px;
 }
 .menu-tendina > img{
-    width: 20px;
+    width: 15px;
 }
-.camera > img{
-    width: 40px;
+.color-important > img{
+    fill: var(--zoom-button-important);
+    fill-opacity: 1;
 }
-/* .debug{
-    display: flex;
-    flex-direction: column;
+.right-header{
+    color: var(--zoom-color-text-finish-call);
+    background-color: var(--zoom-square-small);
+    vertical-align:middle ;
+    padding: 30px 40px;
 }
-.debug-item{
-    height: 40px;
-}
-.debug > img{
-    margin: auto;
-    flex-grow: 1;
-} */
+
 /* end region header */
 /* region main */
 #site-main{

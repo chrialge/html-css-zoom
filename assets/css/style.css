@@ -38,12 +38,18 @@ span{
     justify-content: space-between;
 }
 .widget-span{
-    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    
 }
-div > img{
+.span{
+    height: 40px;
+}
+.widget-span > img{
     width: 30px;
     display: block;
-    margin-left: 10px;
+    margin: auto;
+    flex-grow: 1;
 }
 .left-header{
     display: flex;
@@ -55,7 +61,10 @@ div > img{
 .menu-tendina > img{
     width: 20px;
 }
-.debug{
+.camera > img{
+    width: 40px;
+}
+/* .debug{
     display: flex;
     flex-direction: column;
 }
@@ -65,7 +74,7 @@ div > img{
 .debug > img{
     margin: auto;
     flex-grow: 1;
-}
+} */
 /* end region header */
 /* region main */
 #site-main{

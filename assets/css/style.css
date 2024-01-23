@@ -14,13 +14,38 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
+    background-color: var(--zoom-primary);
 }
 /* end region common */
 /* region utilies */
 /* end region utilies */
 /*  region header */
+.sidebar-zoom{
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    position: fixed;
+    background-color: var(--zoom-secondary);
+    display: flex;
+    justify-content: space-between;
+}
 /* end region header */
 /* region main */
+.container{
+    top: 10%;
+    max-width: 1800px;
+    margin: auto;
+    display: flex;
+    background-color: #b42525;
+    flex-wrap: wrap;
+    align-content: center;
+    
+}
+.square{
+    width: calc((1800px/14)*2);
+    height: 100px;
+}
+
 /* end region main */
 /* region footer */
 /* end region footer */

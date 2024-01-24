@@ -28,13 +28,14 @@ span{
 /* region utilies */
 .d-flex{
     display: flex;
+    align-items: center;
+    text-align: center;
 }
 .width-50 > img{
-    width: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 .padding-container{
-    padding: 15px 0 15px 50px;
+    padding-left: 20px;
 }
 /* end region utilies */
 
@@ -48,40 +49,41 @@ span{
     background-color: var(--zoom-secondary);
     display: flex;
     justify-content: space-between;
+    height: 80px;
 }
 .widget-span{
     display: flex;
     flex-direction: column;
-    margin-right: 30px;
+    margin-right: 20px;
 }
 .span{
-    height: 40px;
+    height: 20px;
 }
 .widget-span > img{
-    width: 25px;
+    width: 30px;
     display: block;
     margin: auto;
     flex-grow: 1;
 }
-.menu-tendina{
-    margin: 30px 30px 0 0px;
-}
 .menu-tendina > img{
-    width: 15px;
+    width: 13px;
+    margin-right: 20px;
 }
 .oversize > img{
-    width: 50px;
+    width: 35px;
+}
+.mic > img{
+    width: 20px;
 }
 .right-header{
     color: var(--zoom-color-text-finish-call);
     background-color: var(--zoom-square-small);
     vertical-align:middle ;
-    padding: 30px 40px;
+    padding: 30px 15px;
 
 }
 .right-header > span{
-    font-size: 25px;
-    margin: 20px auto;
+    font-size: 18px;
 }
 /* end region header */
 

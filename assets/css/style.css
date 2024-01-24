@@ -30,7 +30,6 @@ span{
 .d-flex{
     display: flex;
     align-items: center;
-    text-align: center;
 }
 .width-50 > img{
     padding-bottom: 5px;
@@ -82,7 +81,7 @@ span{
 .container{
     top: 10%;
     max-width: 1800px;
-    margin: auto;
+    margin: 60px auto 0;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -92,12 +91,10 @@ span{
 .square{
     display: block;
     width: calc((1730px/14)*2);
-    background-image: url('https://picsum.photos/id/10/250/150');
     margin: 5px;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    height: 170px;
 }
 .user{
     position: absolute;
@@ -118,8 +115,7 @@ span{
 /* end region main */
 
 /* region footer */
-
-.sidebar-zoom{
+#site-footer{
     z-index: 1;
     bottom: 0;
     left: 0;
@@ -128,44 +124,50 @@ span{
     background-color: var(--zoom-secondary);
     display: flex;
     justify-content: space-between;
-    height: 80px;
+    height: 80px
 }
-.widget-span{
-    display: flex;
-    flex-direction: column;
-    margin-right: 20px;
-}
-.span{
-    height: 20px;
-}
-.widget-span > img{
-    width: 30px;
-    display: block;
-    margin: auto;
+.left-footer{
     flex-grow: 1;
 }
-.menu-tendina > img{
-    width: 13px;
+.widget-span{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+}
+.widget-span >.span{
+    line-height: 20px;
+}
+.widget-span > i{
+    font-size: 25px;
+    line-height: 40px;
+}
+.menu-tendina > i{
     margin-right: 20px;
 }
 
-.mic > img{
-    width: 20px;
-}
 .center-footer{
+    display: flex;
+    justify-content: center;
     overflow-x: auto;
+    flex-grow: 3;
 }
-.oversize > img{
-    width: 35px;
+.oversize > i{
+    font-size: 30px;
+    color: var(--zoom-button-important);
 }
 .right-footer{
+    text-align: end;
+    height: 100%;
+    flex-grow: 1;
+}
+.end-meeting{
+    padding: 0 1rem;
+    display: inline-block;
+    height: 100%;
     color: var(--zoom-color-text-finish-call);
     background-color: var(--zoom-square-small);
-    vertical-align:middle ;
-    padding: 30px 15px;
-
-}
-.right-footer > span{
     font-size: 18px;
+    line-height: 80px;
 }
 /* end region footer */

@@ -16,6 +16,7 @@ body{
     font-family: 'Roboto', sans-serif;
     background-color: var(--zoom-primary);
     color: white;
+    overflow: hidden;
 }
 span{
     font-size: 15px;
@@ -40,6 +41,84 @@ span{
 /* end region utilies */
 
 /*  region header */
+#site-header{
+    width: 100vw;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    text-align: end;
+    background-color: #000000;
+}
+.btn{
+    font-size: 15px;
+}
+.btn {
+    margin: 15px 5px;
+    border: none;
+    background-color: var(--zoom-square-small);  
+    border-radius: 7px;
+    padding: 5px 5px;
+}
+.btn > span{
+    line-height: 20px;
+    font-size: 15px;
+    vertical-align: middle;
+    color: white;
+}
+.btn > img{
+    width: 15px;
+    vertical-align: middle;
+
+}
+/* end region header */
+
+/* region main */
+#site-main{
+    width: 100vw;
+    height: calc(100vh - 130px);
+    overflow-y: scroll;
+}
+.container{
+    top: 10%;
+    max-width: 1800px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    
+}
+.square{
+    display: block;
+    width: calc((1730px/14)*2);
+    background-image: url('https://picsum.photos/id/10/250/150');
+    margin: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 170px;
+}
+.user{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--zoom-user-mic-container);
+    padding: 3px 7px;
+}
+.user > span{
+    font-size: 14px;
+    line-height: 20px;
+}
+.user > img{
+    width:20px
+}
+
+
+/* end region main */
+
+/* region footer */
+
 .sidebar-zoom{
     z-index: 1;
     bottom: 0;
@@ -69,88 +148,24 @@ span{
     width: 13px;
     margin-right: 20px;
 }
-.oversize > img{
-    width: 35px;
-}
+
 .mic > img{
     width: 20px;
 }
-.right-header{
+.center-footer{
+    overflow-x: auto;
+}
+.oversize > img{
+    width: 35px;
+}
+.right-footer{
     color: var(--zoom-color-text-finish-call);
     background-color: var(--zoom-square-small);
     vertical-align:middle ;
     padding: 30px 15px;
 
 }
-.right-header > span{
+.right-footer > span{
     font-size: 18px;
 }
-/* end region header */
-
-/* region main */
-#site-main{
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    overflow-y: scroll;
-}
-.container{
-    top: 10%;
-    max-width: 1800px;
-    margin: calc(1020px/20) auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    
-}
-.square{
-    width: calc((1730px/14)*2);
-    height: 200px;
-    background-image: url('https://picsum.photos/id/10/200/300');
-    margin: 5px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    height: 170px;
-}
-.user{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: var(--zoom-user-mic-container);
-    padding: 3px 7px;
-}
-.user > span{
-    font-size: 14px;
-    line-height: 20px;
-}
-.user > img{
-    width:20px
-}
-.badges{
-    position: absolute;
-    display: flex;
-    gap: 0.5rem;
-    right: 0;
-    top:0;
-    margin:10px;
-}
-.icon {
-    background-color: var(--zoom-square-small);
-    padding: 5px;
-    border-radius: 5px;
-}
-.icon > span{
-    line-height: 10px;
-    font-size: 15px;
-    vertical-align: middle;
-}
-.icon > img{
-    width: 15px;
-    vertical-align: middle;
-
-}
-
-/* end region main */
-/* region footer */
 /* end region footer */
